@@ -1,0 +1,10 @@
+# Standards: 1.2
+---
+# @var mc_version:description: Version for the binary
+# renovate: datasource=github-releases depName=minio/mc
+mc_version: RELEASE.2023-04-06T16-51-10Z
+
+# @var mc_download:description: URL to the archive of the release to install
+mc_download: "https://dl.minio.io/client/mc/release/linux-amd64/archive/mc.{{ mc_version }}"
+
+...
