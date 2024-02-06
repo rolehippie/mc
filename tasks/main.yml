@@ -1,16 +1,15 @@
-# Standards: 1.2
 ---
 - name: Check existing install
   register: mc_version_check
   failed_when: False
   changed_when: False
   check_mode: False
-  shell: /usr/bin/mc --version 2>&1
+  ansible.builtin.shell: /usr/bin/mc --version 2>&1
   tags:
     - mc
 
 - name: Fact version change
-  set_fact:
+  ansible.builtin.set_fact:
     mc_version_changed: "{{ mc_version_check.rc != 0 or (mc_version_check.stdout_lines is defined and mc_version not in mc_version_check.stdout_lines[0]) | bool }}"
   tags:
     - mc
@@ -18,7 +17,7 @@
 - name: Download release binary
   when:
     - mc_version_changed
-  get_url:
+  ansible.builtin.get_url:
     url: "{{ mc_download }}"
     dest: /usr/bin/mc
     owner: root
