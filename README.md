@@ -1,4 +1,4 @@
-# mc
+# workspace
 
 [![Source Code](https://img.shields.io/badge/github-source%20code-blue?logo=github&logoColor=white)](https://github.com/rolehippie/mc)
 [![General Workflow](https://github.com/rolehippie/mc/actions/workflows/general.yml/badge.svg)](https://github.com/rolehippie/mc/actions/workflows/general.yml)
@@ -39,8 +39,8 @@ URL to the archive of the release to install
 #### Default value
 
 ```YAML
-mc_download: https://dl.minio.io/client/mc/release/linux-amd64/archive/mc.{{ mc_version
-  }}
+mc_download: https://dl.minio.io/client/mc/release/linux-amd64/archive/mc.{{ 
+  mc_version }}
 ```
 
 ### mc_version
@@ -56,7 +56,6 @@ mc_version: RELEASE.2023-04-06T16-51-10Z
 ## Discovered Tags
 
 **_mc_**
-
 
 ## Dependencies
 
