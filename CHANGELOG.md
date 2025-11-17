@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.0](https://github.com/rolehippie/mc/compare/v2.0.0...v2.1.0) (2025-11-17)
+
+
+### Features
+
+* apply new repo structure and update linting ([59bfc17](https://github.com/rolehippie/mc/commit/59bfc1774b2d92586bfc8017741c0b58258154fd))
+
 ## [2.0.0](https://github.com/rolehippie/mc/compare/v1.0.0...v2.0.0) (2024-02-12)
 
 
