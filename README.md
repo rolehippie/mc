@@ -39,8 +39,7 @@ URL to the archive of the release to install
 #### Default value
 
 ```YAML
-mc_download: https://dl.minio.io/client/mc/release/linux-amd64/archive/mc.{{ 
-  mc_version }}
+mc_download: https://dl.minio.io/client/mc/release/linux-amd64/archive/mc.{{ mc_version }}
 ```
 
 ### mc_version
